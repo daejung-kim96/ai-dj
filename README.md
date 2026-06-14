@@ -1,4 +1,4 @@
-﻿# ai-dj
+# ai-dj
 
 ai-dj is a reusable AI development harness repository.
 
@@ -10,6 +10,7 @@ Use ai-dj as the control room for AI-assisted development across many projects.
 
 - Common skills live in `skills/`.
 - Common rules live in `docs/rules/`.
+- Study notes and concept explanations live in `docs/concepts/`.
 - Project-specific context lives in `project-profiles/`.
 - Verification rules live in `evals/`.
 - Work summaries and audits live in `reports/`.
@@ -43,6 +44,7 @@ ai-dj/
   AGENT.md
   README.md
   docs/
+    concepts/
     rules/
     specs/
     examples/

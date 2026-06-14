@@ -7,5 +7,6 @@ Use this checklist before finalizing AI-assisted work.
 - Did the output cite or reference the relevant source context?
 - Did the agent run or describe an appropriate verification step?
 - Did durable decisions get recorded?
+- If the work introduced a study concept, did `docs/concepts/` get updated?
 - Did project-specific knowledge stay inside the project profile?
 - Did the work avoid secrets and production-side effects?
