@@ -1,0 +1,11 @@
+﻿# Evaluation Checklist
+
+Use this checklist before finalizing AI-assisted work.
+
+- Did the agent identify the active project profile?
+- Did the agent read the required context files?
+- Did the output cite or reference the relevant source context?
+- Did the agent run or describe an appropriate verification step?
+- Did durable decisions get recorded?
+- Did project-specific knowledge stay inside the project profile?
+- Did the work avoid secrets and production-side effects?

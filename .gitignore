@@ -1,0 +1,10 @@
+﻿# Local files
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
+
+# Generated reports can be committed intentionally when useful.
+reports/tmp/
