@@ -6,7 +6,7 @@ Expanded `skills/update-living-documentation` and added a Korean study note for 
 
 ## Added
 
-- `docs/concepts/living-documentation.md`
+- `docs/concepts/living-documentation--살아있는-문서.md`
 - durable knowledge categories
 - target document placement rules
 - entry templates

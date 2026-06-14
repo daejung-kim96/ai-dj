@@ -6,7 +6,7 @@ Expanded `skills/verify-context-integrity` and added a Korean study note for con
 
 ## Added
 
-- `docs/concepts/context-integrity.md`
+- `docs/concepts/context-integrity--컨텍스트-무결성.md`
 - integrity dimensions
 - status and severity definitions
 - report template

@@ -10,6 +10,6 @@ The user wants study materials to be easier to understand while still keeping En
 
 ## Added
 
-- `docs/concepts/concept-glossary.md`
+- `docs/concepts/concept-glossary--개념-용어표.md`
 - bilingual concept title format: `English Name (한국어 이름)`
 - AGENT rule requiring English/Korean names together for study concepts

@@ -6,7 +6,7 @@ Expanded `skills/generate-feature-context` and added a Korean study note for the
 
 ## Added
 
-- `docs/concepts/feature-context.md`
+- `docs/concepts/feature-context--기능-컨텍스트.md`
 - detailed workflow for `skills/generate-feature-context`
 - output template for feature context packs
 - quality checklist and anti-patterns

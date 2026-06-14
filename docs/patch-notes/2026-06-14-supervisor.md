@@ -6,7 +6,7 @@ Expanded `skills/supervisor` and added a Korean study note for the supervisor co
 
 ## Added
 
-- `docs/concepts/supervisor.md`
+- `docs/concepts/supervisor--작업-지휘자.md`
 - request type to skill chain mapping
 - supervisor operating loop
 - stop conditions

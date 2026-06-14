@@ -33,9 +33,10 @@ This repository is an AI development harness. Agents working here must operate f
 - Cross-project rules go in `docs/rules/`.
 - Study-oriented concept explanations go in `docs/concepts/` and should be written in Korean by default.
 - Study-oriented concept docs should include English names and Korean names together when introducing concepts.
+- Study-oriented concept filenames should include English and Korean names together when practical, using `english-name--한국어-이름.md`.
 - One-off results go in `reports/`.
 
-When the user is learning a concept while building the harness, update `docs/concepts/` with a concise Korean explanation before or alongside skill changes. Include both the English term and Korean term when the concept has a common English name.
+When the user is learning a concept while building the harness, update `docs/concepts/` with a concise Korean explanation before or alongside skill changes. Include both the English term and Korean term when the concept has a common English name, including the filename when practical.
 
 ## Git message rules
 
