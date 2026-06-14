@@ -8,6 +8,7 @@
 
 - `ai-agent-harness.md`: AI 에이전트 하네스가 무엇이고 왜 중요한지
 - `context-routing.md`: 에이전트가 작업 전에 어떤 파일을 읽을지 고르는 방식
+- `context-integrity.md`: AI 결과가 실제 근거 파일과 맞는지 확인하는 방식
 - `feature-context.md`: 기능 구현 전에 필요한 정보를 작업 가능한 문맥으로 묶는 방식
 - `skill-roadmap.md`: 공통 스킬을 어떤 순서로 만들면 좋은지
 - `skills.md`: ai-dj의 스킬 개념과 재사용 원칙
