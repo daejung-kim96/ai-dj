@@ -36,6 +36,12 @@ This repository is an AI development harness. Agents working here must operate f
 
 When the user is learning a concept while building the harness, update `docs/concepts/` with a concise Korean explanation before or alongside skill changes.
 
+## Git message rules
+
+- Commit messages should use Korean summaries by default for readability.
+- Keep the conventional commit type and optional scope when useful, then write the human-readable summary in Korean.
+- Example: `feat(context-router): 컨텍스트 라우팅 스킬 확장`
+
 ## Default skill selection
 
 - Broad request or unclear scope: `skills/supervisor`
