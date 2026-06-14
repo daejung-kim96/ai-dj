@@ -18,6 +18,9 @@ ai-dj를 공부할 때 자주 나오는 영어 개념을 한국어 이름과 함
 | Skill Chain | 스킬 체인 | 여러 스킬을 순서대로 연결한 작업 흐름 | `supervisor--작업-지휘자.md` |
 | Verification | 검증 | 결과가 맞는지 확인하는 단계 | `context-integrity--컨텍스트-무결성.md` |
 | Durable Knowledge | 오래 남길 지식 | 다음 작업에서도 써야 하는 결정, 규칙, 학습 내용 | `living-documentation--살아있는-문서.md` |
+| Test-Driven Development | 테스트 주도 개발 | 코드를 쓰기 전에 원하는 동작을 테스트로 먼저 고정하는 방식 | `testing-tdd--테스트-주도-개발.md` |
+| Red-Green-Refactor | 레드-그린-리팩터 | 실패 테스트, 통과 구현, 구조 정리를 반복하는 TDD 흐름 | `testing-tdd--테스트-주도-개발.md` |
+| Failing Test | 실패하는 테스트 | 아직 구현되지 않은 기대 행동을 먼저 보여주는 테스트 | `testing-tdd--테스트-주도-개발.md` |
 
 ## 작성 규칙
 
