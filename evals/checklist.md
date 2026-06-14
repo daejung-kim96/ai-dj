@@ -5,6 +5,7 @@ Use this checklist before finalizing AI-assisted work.
 - Did the agent identify the active project profile?
 - Did the agent read the required context files?
 - Did the output cite or reference the relevant source context?
+- If a feature context was generated, did it separate confirmed facts, assumptions, open questions, risks, and next skill?
 - Did the agent run or describe an appropriate verification step?
 - Did durable decisions get recorded?
 - If the work introduced a study concept, did `docs/concepts/` get updated?
