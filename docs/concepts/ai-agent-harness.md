@@ -1,4 +1,4 @@
-# AI Agent Harness
+# AI Agent Harness (AI 에이전트 하네스)
 
 AI 에이전트 하네스는 언어 모델이 실제 작업을 더 안정적으로 수행하도록 둘러싸는 실행 시스템이다.
 

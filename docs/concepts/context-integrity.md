@@ -1,4 +1,4 @@
-# Context Integrity
+# Context Integrity (컨텍스트 무결성)
 
 컨텍스트 무결성은 AI가 만든 결과가 실제로 읽은 근거 파일과 일치하는지 확인하는 개념이다.
 

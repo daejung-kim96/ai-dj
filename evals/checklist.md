@@ -12,5 +12,6 @@ Use this checklist before finalizing AI-assisted work.
 - Did durable decisions get recorded?
 - If living documentation was updated, did the target location match the knowledge category?
 - If the work introduced a study concept, did `docs/concepts/` get updated?
+- If the work introduced a study concept, did it include both the English name and Korean name when useful?
 - Did project-specific knowledge stay inside the project profile?
 - Did the work avoid secrets and production-side effects?

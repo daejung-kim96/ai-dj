@@ -1,4 +1,4 @@
-# Living Documentation
+# Living Documentation (살아있는 문서)
 
 Living Documentation은 프로젝트가 변할 때 함께 업데이트되는 살아있는 문서다.
 

@@ -1,4 +1,4 @@
-# Skill Roadmap
+# Skill Roadmap (스킬 로드맵)
 
 이 문서는 ai-dj의 공통 스킬을 어떤 순서로 만들어가면 좋은지 정리한다.
 

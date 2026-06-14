@@ -1,4 +1,4 @@
-# Context Routing
+# Context Routing (컨텍스트 라우팅)
 
 컨텍스트 라우팅은 AI 에이전트가 작업을 시작하기 전에 어떤 파일을 읽어야 하는지 결정하는 과정이다.
 
