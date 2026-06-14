@@ -7,7 +7,7 @@
 1. `context-router`: 작업 전에 어떤 파일을 읽을지 결정한다. 완료
 2. `generate-feature-context`: 선택된 파일들을 구현 가능한 컨텍스트 팩으로 정리한다. 완료
 3. `verify-context-integrity`: 결과가 선택한 컨텍스트와 맞는지 확인한다. 완료
-4. `update-living-documentation`: 오래 남길 학습 내용과 결정을 기록한다.
+4. `update-living-documentation`: 오래 남길 학습 내용과 결정을 기록한다. 완료
 5. `supervisor`: 넓은 요청에서 여러 스킬의 순서를 조율한다.
 
 ## 2단계: 엔지니어링 워크플로우
