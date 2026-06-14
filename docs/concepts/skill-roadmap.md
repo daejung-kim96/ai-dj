@@ -8,7 +8,7 @@
 2. `generate-feature-context`: 선택된 파일들을 구현 가능한 컨텍스트 팩으로 정리한다. 완료
 3. `verify-context-integrity`: 결과가 선택한 컨텍스트와 맞는지 확인한다. 완료
 4. `update-living-documentation`: 오래 남길 학습 내용과 결정을 기록한다. 완료
-5. `supervisor`: 넓은 요청에서 여러 스킬의 순서를 조율한다.
+5. `supervisor`: 넓은 요청에서 여러 스킬의 순서를 조율한다. 완료
 
 ## 2단계: 엔지니어링 워크플로우
 
@@ -38,3 +38,14 @@ project-profiles/artmoa/
 미래의 혼란을 줄이는 순서로 스킬을 만든다.
 
 그래서 `context-router`가 먼저다. 다른 스킬을 쓰기 전에 에이전트가 무엇을 알아야 하는지 결정하기 때문이다.
+
+## 현재 기본 루프
+
+```text
+supervisor
+-> context-router
+-> generate-feature-context
+-> task-specific skill
+-> verify-context-integrity
+-> update-living-documentation
+```

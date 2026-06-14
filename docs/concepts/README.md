@@ -13,6 +13,7 @@
 - `living-documentation.md`: 대화 중 생긴 결정과 학습 내용을 오래 남기는 방식
 - `skill-roadmap.md`: 공통 스킬을 어떤 순서로 만들면 좋은지
 - `skills.md`: ai-dj의 스킬 개념과 재사용 원칙
+- `supervisor.md`: 사용자 요청을 실행 가능한 스킬 체인으로 바꾸는 방식
 
 ## 작성 원칙
 
