@@ -44,6 +44,14 @@ When the user is learning a concept while building the harness, update `docs/con
 - Keep the conventional commit type and optional scope when useful, then write the human-readable summary in Korean.
 - Example: `feat(context-router): 컨텍스트 라우팅 스킬 확장`
 
+## Git approval rules
+
+- Before committing and pushing, stop and show the user the changed files, short change summary, verification status, target remote/branch, and proposed Korean commit message.
+- Ask once whether to commit and push.
+- After approval, run `git commit` and `git push` as one continuous Git publishing step.
+- Do not ask separately for commit and push unless the user explicitly requests a split workflow.
+- Do not skip the review step unless the user explicitly asks to skip confirmation for that specific operation.
+
 ## Default skill selection
 
 - Broad request or unclear scope: `skills/supervisor`

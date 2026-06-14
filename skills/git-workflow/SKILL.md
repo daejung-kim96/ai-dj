@@ -28,4 +28,38 @@ fix(evals): 검증 체크리스트 누락 항목 보완
 2. Group related changes.
 3. Summarize behavior, not just files.
 4. Mention verification.
-5. Avoid committing secrets or generated noise.
+5. Propose a Korean commit message.
+6. Show the target remote and branch.
+7. Stop and ask the user whether to commit and push.
+8. After approval, commit and push as one continuous Git publishing step.
+9. Avoid committing secrets or generated noise.
+
+## Pre-publish review
+
+Before running `git commit` and `git push`, show:
+
+```text
+Changed files:
+- ...
+
+Change summary:
+- ...
+
+Verification:
+- ...
+
+Proposed commit message:
+- type(scope): 한국어 요약
+
+Remote and branch:
+- origin main
+
+Question:
+- 이 내용으로 커밋하고 push할까요?
+```
+
+## Approval rule
+
+Commit and push use one approval point by default.
+
+Do not split commit and push into separate confirmations unless the user asks for that workflow.

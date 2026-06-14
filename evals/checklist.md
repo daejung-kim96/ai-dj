@@ -16,3 +16,4 @@ Use this checklist before finalizing AI-assisted work.
 - If the work introduced a study concept file, did the filename include both English and Korean names when practical?
 - Did project-specific knowledge stay inside the project profile?
 - Did the work avoid secrets and production-side effects?
+- Before commit/push, did the agent show changes and ask for one explicit commit-and-push approval?
