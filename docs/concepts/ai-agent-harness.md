@@ -1,66 +1,66 @@
 # AI Agent Harness
 
-An AI agent harness is the system around a language model that helps it work reliably.
+AI 에이전트 하네스는 언어 모델이 실제 작업을 더 안정적으로 수행하도록 둘러싸는 실행 시스템이다.
 
-The model supplies reasoning, language, and pattern recognition. The harness supplies the working environment:
+모델은 추론, 언어 처리, 패턴 인식을 담당한다. 하네스는 모델 주변의 작업 환경을 담당한다.
 
-- instructions
-- context selection
-- tools
-- memory
-- workflows
-- verification
-- guardrails
-- logs and reports
+- 지시문
+- 컨텍스트 선택
+- 도구
+- 메모리
+- 워크플로우
+- 검증
+- 가드레일
+- 로그와 리포트
 
-## Simple model
-
-```text
-LLM model
--> reads selected context
--> follows a skill workflow
--> uses tools
--> verifies output
--> records durable decisions
-```
-
-Without a harness, an agent tends to rely on whatever is currently in the conversation. With a harness, the agent has a repeatable way to find the right files, apply the right workflow, and check the result.
-
-## Why this matters
-
-Good AI output usually depends on three things:
-
-1. The model.
-2. The context given to the model.
-3. The workflow used to turn context into an answer or change.
-
-Most teams focus only on the model. ai-dj focuses on the second and third parts.
-
-## Harness vs prompt
-
-A prompt is one instruction.
-
-A harness is a reusable operating system for many prompts.
+## 단순 구조
 
 ```text
-Prompt:
-  "Build this feature."
-
-Harness:
-  "Classify the request, read these files, apply this skill, verify these checks,
-  and record any decision that should survive the chat."
+LLM 모델
+-> 선택된 컨텍스트를 읽음
+-> 스킬 워크플로우를 따름
+-> 도구를 사용함
+-> 결과를 검증함
+-> 오래 남겨야 할 결정을 기록함
 ```
 
-## ai-dj interpretation
+하네스가 없으면 에이전트는 현재 대화에 있는 정보에 많이 의존한다. 하네스가 있으면 필요한 파일을 찾고, 정해진 워크플로우를 적용하고, 결과를 확인하는 방식이 반복 가능해진다.
 
-In ai-dj:
+## 왜 중요한가
 
-- `AGENT.md` defines the overall operating loop.
-- `skills/` defines reusable workflows.
-- `docs/rules/` defines cross-project rules.
-- `docs/concepts/` explains ideas for study.
-- `project-profiles/` keeps project-specific context.
-- `evals/` defines checks before work is considered done.
-- `reports/` stores one-off outputs.
+좋은 AI 결과는 보통 세 가지에 의해 결정된다.
 
-The goal is not to make an agent read everything. The goal is to make it read the right things at the right time.
+1. 사용하는 모델
+2. 모델에게 제공한 컨텍스트
+3. 컨텍스트를 결과로 바꾸는 작업 절차
+
+많은 사람은 모델 성능에만 집중한다. ai-dj는 두 번째와 세 번째, 즉 컨텍스트와 작업 절차를 다루는 레포다.
+
+## 하네스와 프롬프트의 차이
+
+프롬프트는 하나의 지시문이다.
+
+하네스는 여러 프롬프트와 여러 작업에 반복해서 적용할 수 있는 운영 체계다.
+
+```text
+프롬프트:
+  "이 기능을 만들어줘."
+
+하네스:
+  "요청을 분류하고, 이 파일들을 읽고, 이 스킬을 적용하고,
+  이 기준으로 검증한 뒤, 다음에도 필요한 결정은 문서에 남겨라."
+```
+
+## ai-dj에서의 의미
+
+ai-dj에서는 다음처럼 역할을 나눈다.
+
+- `AGENT.md`: 전체 작업 루프와 기본 행동 규칙
+- `skills/`: 재사용 가능한 작업 절차
+- `docs/rules/`: 모든 프로젝트에 적용할 수 있는 공통 규칙
+- `docs/concepts/`: 공부용 개념 설명
+- `project-profiles/`: 프로젝트별 맥락
+- `evals/`: 작업 완료 전에 확인할 검증 기준
+- `reports/`: 일회성 결과와 리포트
+
+목표는 에이전트가 모든 파일을 읽게 하는 것이 아니다. 목표는 에이전트가 필요한 순간에 필요한 파일을 읽게 만드는 것이다.

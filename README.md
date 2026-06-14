@@ -10,7 +10,7 @@ Use ai-dj as the control room for AI-assisted development across many projects.
 
 - Common skills live in `skills/`.
 - Common rules live in `docs/rules/`.
-- Study notes and concept explanations live in `docs/concepts/`.
+- Study notes and concept explanations live in `docs/concepts/` and are written in Korean by default.
 - Project-specific context lives in `project-profiles/`.
 - Verification rules live in `evals/`.
 - Work summaries and audits live in `reports/`.

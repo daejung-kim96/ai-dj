@@ -1,45 +1,45 @@
 # Skills
 
-A skill is a reusable workflow that tells an agent how to do a class of work.
+스킬은 에이전트가 특정 종류의 작업을 수행할 때 따르는 재사용 가능한 워크플로우다.
 
-It is not project-specific knowledge. It is the repeatable method.
+스킬은 프로젝트별 지식이 아니다. 반복 가능한 작업 방법이다.
 
-## Example
+## 예시
 
-`backend-ddd` should explain how to reason about aggregates, invariants, commands, repositories, and tests.
+`backend-ddd` 스킬은 애그리거트, 불변식, 커맨드, 리포지토리, 테스트를 어떻게 생각해야 하는지 설명해야 한다.
 
-It should not say that a specific project has an `Exhibition` aggregate. That belongs in a project profile.
+하지만 어떤 프로젝트에 `Exhibition` 애그리거트가 있다는 사실은 스킬에 넣지 않는다. 그런 정보는 프로젝트 프로필에 둔다.
 
-## Skill anatomy
+## 스킬의 기본 구성
 
-A useful skill usually contains:
+좋은 스킬은 보통 다음 내용을 가진다.
 
-- when to use it
-- goal
-- inputs
-- required context
-- step-by-step workflow
-- output format
-- verification checklist
-- examples or anti-patterns
+- 언제 사용하는지
+- 목표
+- 입력
+- 필요한 컨텍스트
+- 단계별 작업 절차
+- 출력 형식
+- 검증 체크리스트
+- 예시 또는 피해야 할 패턴
 
-## Common vs project-specific
+## 공통 스킬과 프로젝트별 지식
 
 ```text
-Common skill:
-  "For DDD work, identify bounded context and aggregate invariants."
+공통 스킬:
+  "DDD 작업에서는 바운디드 컨텍스트와 애그리거트 불변식을 먼저 식별한다."
 
-Project profile:
-  "In this project, exhibition approval uses PENDING, APPROVED, REJECTED."
+프로젝트 프로필:
+  "이 프로젝트에서 전시 승인 상태는 PENDING, APPROVED, REJECTED를 사용한다."
 ```
 
-Keeping this separation lets ai-dj work across many projects.
+이 분리를 지켜야 ai-dj를 여러 프로젝트에서 재사용할 수 있다.
 
-## Skill chaining
+## 스킬 체이닝
 
-Skills can be used together.
+스킬은 여러 개를 이어서 사용할 수 있다.
 
-Example:
+예시:
 
 ```text
 supervisor
@@ -51,14 +51,14 @@ supervisor
 -> update-living-documentation
 ```
 
-The supervisor chooses the chain. Each skill should stay focused.
+`supervisor`는 어떤 스킬들을 어떤 순서로 쓸지 고른다. 각 스킬은 자기 역할에 집중해야 한다.
 
-## Study note
+## 공부 메모
 
-When adding a new skill, ask:
+새 스킬을 추가할 때는 다음 질문을 던진다.
 
-1. Is this workflow useful in more than one project?
-2. What files must the agent read before using it?
-3. What output should it produce?
-4. How can we tell if the output is good?
-5. What should be recorded for future work?
+1. 이 워크플로우가 두 개 이상의 프로젝트에서 유용한가?
+2. 이 스킬을 쓰기 전에 에이전트가 어떤 파일을 읽어야 하는가?
+3. 어떤 출력물을 만들어야 하는가?
+4. 결과가 좋은지 어떻게 판단할 수 있는가?
+5. 다음 작업을 위해 무엇을 기록해야 하는가?

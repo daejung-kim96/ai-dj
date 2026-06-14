@@ -1,18 +1,18 @@
 # Concepts
 
-This folder is the study notebook for ai-dj.
+이 폴더는 ai-dj를 공부하면서 쌓아가는 개념 노트다.
 
-Use it to explain concepts that make the harness easier to understand and reuse across projects.
+공통 스킬은 여러 프로젝트에서 재사용하기 위해 영어를 섞어 쓸 수 있지만, 공부용 개념 문서는 기본적으로 한국어로 작성한다.
 
-## Index
+## 목차
 
-- `ai-agent-harness.md`: what an AI agent harness is and why it matters.
-- `context-routing.md`: how agents choose which files to read before acting.
-- `skill-roadmap.md`: the recommended order for building common skills.
-- `skills.md`: how ai-dj skills work and how they should stay reusable.
+- `ai-agent-harness.md`: AI 에이전트 하네스가 무엇이고 왜 중요한지
+- `context-routing.md`: 에이전트가 작업 전에 어떤 파일을 읽을지 고르는 방식
+- `skill-roadmap.md`: 공통 스킬을 어떤 순서로 만들면 좋은지
+- `skills.md`: ai-dj의 스킬 개념과 재사용 원칙
 
-## Rule
+## 작성 원칙
 
-Concept documents should teach the idea first, then show how ai-dj applies it.
+개념 문서는 먼저 아이디어를 설명하고, 그 다음 ai-dj에서 어떻게 적용하는지 보여준다.
 
-Keep project-specific examples short. Put durable project facts in `project-profiles/<project>/`.
+프로젝트별 예시는 짧게만 넣는다. 오래 남아야 하는 프로젝트별 사실은 `project-profiles/<project>/`에 둔다.

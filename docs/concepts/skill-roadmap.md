@@ -1,26 +1,28 @@
 # Skill Roadmap
 
-This is the suggested order for building common ai-dj skills.
+이 문서는 ai-dj의 공통 스킬을 어떤 순서로 만들어가면 좋은지 정리한다.
 
-## Phase 1: Foundation
+## 1단계: 기반 스킬
 
-1. `context-router`: choose the right files before acting.
-2. `generate-feature-context`: turn selected files into an implementation-ready context pack.
-3. `verify-context-integrity`: check that output matches the selected context.
-4. `update-living-documentation`: record durable learning and decisions.
-5. `supervisor`: coordinate skill chains for broad requests.
+1. `context-router`: 작업 전에 어떤 파일을 읽을지 결정한다.
+2. `generate-feature-context`: 선택된 파일들을 구현 가능한 컨텍스트 팩으로 정리한다.
+3. `verify-context-integrity`: 결과가 선택한 컨텍스트와 맞는지 확인한다.
+4. `update-living-documentation`: 오래 남길 학습 내용과 결정을 기록한다.
+5. `supervisor`: 넓은 요청에서 여러 스킬의 순서를 조율한다.
 
-## Phase 2: Engineering workflows
+## 2단계: 엔지니어링 워크플로우
 
-1. `testing-tdd`: convert behavior into tests first.
-2. `backend-ddd`: model domains, aggregates, invariants, and repositories.
-3. `backend-eda`: model events, producers, consumers, and idempotency.
-4. `frontend-feature`: build pages, components, forms, states, and API integration.
-5. `git-workflow`: prepare commits and PR summaries.
+1. `testing-tdd`: 요구사항을 먼저 테스트로 바꾼다.
+2. `backend-ddd`: 도메인, 애그리거트, 불변식, 리포지토리를 모델링한다.
+3. `backend-eda`: 이벤트, 생산자, 소비자, 멱등성을 모델링한다.
+4. `frontend-feature`: 화면, 컴포넌트, 폼, 상태, API 연동을 만든다.
+5. `git-workflow`: 커밋과 PR 요약을 준비한다.
 
-## Phase 3: Project profiles
+## 3단계: 프로젝트 프로필
 
-After common skills are stable, add project profiles such as:
+공통 스킬이 어느 정도 안정되면 프로젝트 프로필을 추가한다.
+
+예시:
 
 ```text
 project-profiles/artmoa/
@@ -31,8 +33,8 @@ project-profiles/artmoa/
   known-issues.md
 ```
 
-## Rule of thumb
+## 판단 기준
 
-Build skills in the order that reduces future confusion.
+미래의 혼란을 줄이는 순서로 스킬을 만든다.
 
-That is why `context-router` comes first: it decides what the agent should know before using any other skill.
+그래서 `context-router`가 먼저다. 다른 스킬을 쓰기 전에 에이전트가 무엇을 알아야 하는지 결정하기 때문이다.

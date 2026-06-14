@@ -1,86 +1,86 @@
 # Context Routing
 
-Context routing is the process of deciding which files an AI agent should read before it acts.
+컨텍스트 라우팅은 AI 에이전트가 작업을 시작하기 전에 어떤 파일을 읽어야 하는지 결정하는 과정이다.
 
-It is the first common skill because every other skill depends on it.
+모든 스킬은 적절한 컨텍스트 위에서만 잘 작동하기 때문에, 컨텍스트 라우팅은 ai-dj의 첫 번째 기반 스킬이다.
 
-## The problem
+## 해결하려는 문제
 
-AI agents can fail in two opposite ways:
+AI 에이전트는 보통 두 방향으로 실패한다.
 
-- They read too little and miss important project rules.
-- They read too much and lose focus.
+- 너무 적게 읽어서 중요한 프로젝트 규칙을 놓친다.
+- 너무 많이 읽어서 초점이 흐려진다.
 
-Context routing solves this by choosing a small, relevant set of files first, then expanding only when needed.
+컨텍스트 라우팅은 먼저 작고 관련성 높은 파일 묶음을 고르고, 필요할 때만 읽는 범위를 넓히는 방식으로 이 문제를 줄인다.
 
-## Basic flow
-
-```text
-User request
--> identify project profile
--> classify request type
--> choose required files
--> choose optional files
--> note missing context
--> proceed with selected skill
-```
-
-## Request types
-
-Common request types:
-
-- product/spec
-- backend
-- frontend
-- data pipeline
-- testing
-- documentation
-- git/release
-- architecture review
-- troubleshooting
-- learning/concept explanation
-
-## Required vs optional context
-
-Required context is needed before acting.
-
-Optional context may improve the result but should not block the first pass.
-
-Missing context is information the agent expected but could not find.
+## 기본 흐름
 
 ```text
-Required:
-- project-profiles/my-app/project.yaml: identifies stack and source maps
-
-Optional:
-- docs/examples/form-page.md: useful if generating a similar page
-
-Missing:
-- API contract: needed to implement the frontend integration safely
+사용자 요청
+-> 프로젝트 프로필 확인
+-> 요청 유형 분류
+-> 필수 파일 선택
+-> 선택 파일 선택
+-> 누락된 컨텍스트 표시
+-> 선택된 스킬로 진행
 ```
 
-## Expansion rule
+## 요청 유형
 
-Start narrow. Expand only when one of these is true:
+자주 쓰는 요청 유형은 다음과 같다.
 
-- the selected files contradict each other
-- a required source is missing
-- implementation reaches an unknown boundary
-- verification requires another file
-- the user asks for a broader audit
+- 제품/명세
+- 백엔드
+- 프론트엔드
+- 데이터 파이프라인
+- 테스트
+- 문서
+- Git/릴리스
+- 아키텍처 리뷰
+- 문제 해결
+- 학습/개념 설명
 
-## Why not read everything
+## 필수, 선택, 누락 컨텍스트
 
-Reading everything can make the agent slower and less precise. It can also mix unrelated rules from different projects.
+필수 컨텍스트는 작업 전에 반드시 읽어야 하는 정보다.
 
-The better pattern is:
+선택 컨텍스트는 결과 품질을 높일 수 있지만 첫 단계 진행을 막지는 않는 정보다.
+
+누락 컨텍스트는 에이전트가 필요하다고 예상했지만 찾지 못한 정보다.
 
 ```text
-route -> read -> act -> verify -> expand if needed
+필수:
+- project-profiles/my-app/project.yaml: 기술 스택과 소스 위치를 알려준다.
+
+선택:
+- docs/examples/form-page.md: 비슷한 화면을 만들 때 참고할 수 있다.
+
+누락:
+- API 계약 문서: 프론트엔드 연동을 안전하게 구현하려면 필요하다.
 ```
 
-## ai-dj usage
+## 확장 규칙
 
-The `skills/context-router` skill should produce a routing plan before implementation or analysis begins.
+처음에는 좁게 시작한다. 다음 상황에서만 컨텍스트를 넓힌다.
 
-The routing plan is not the final answer. It is a short context map used to make the next step grounded.
+- 선택한 파일끼리 서로 모순된다.
+- 필수 출처가 없다.
+- 구현 중 모르는 경계가 나온다.
+- 검증을 위해 다른 파일이 필요하다.
+- 사용자가 넓은 범위의 검토를 요청한다.
+
+## 왜 모든 파일을 읽지 않는가
+
+모든 파일을 읽으면 느려지고 부정확해질 수 있다. 서로 다른 프로젝트의 규칙이나 관련 없는 문맥이 섞일 위험도 커진다.
+
+더 좋은 패턴은 다음과 같다.
+
+```text
+라우팅 -> 읽기 -> 작업 -> 검증 -> 필요할 때 확장
+```
+
+## ai-dj에서의 사용 방식
+
+`skills/context-router`는 구현이나 분석 전에 라우팅 계획을 만든다.
+
+라우팅 계획은 최종 답변이 아니다. 다음 작업을 근거 있게 만들기 위한 짧은 컨텍스트 지도다.

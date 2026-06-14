@@ -31,10 +31,10 @@ This repository is an AI development harness. Agents working here must operate f
 - Durable architectural decisions go in the active project profile.
 - Reusable workflow improvements go in `skills/`.
 - Cross-project rules go in `docs/rules/`.
-- Study-oriented concept explanations go in `docs/concepts/`.
+- Study-oriented concept explanations go in `docs/concepts/` and should be written in Korean by default.
 - One-off results go in `reports/`.
 
-When the user is learning a concept while building the harness, update `docs/concepts/` with a concise explanation before or alongside skill changes.
+When the user is learning a concept while building the harness, update `docs/concepts/` with a concise Korean explanation before or alongside skill changes.
 
 ## Default skill selection
 
