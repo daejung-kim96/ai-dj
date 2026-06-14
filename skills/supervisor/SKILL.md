@@ -51,10 +51,10 @@ clarify objective
 | Request type | Default chain |
 | --- | --- |
 | broad planning | `context-router -> generate-feature-context -> verify-context-integrity` |
-| feature implementation | `context-router -> generate-feature-context -> engineering skill -> testing-tdd -> verify-context-integrity -> update-living-documentation` |
-| backend domain work | `context-router -> generate-feature-context -> backend-ddd -> testing-tdd -> verify-context-integrity` |
-| event-driven backend work | `context-router -> generate-feature-context -> backend-eda -> testing-tdd -> verify-context-integrity` |
-| frontend work | `context-router -> generate-feature-context -> frontend-feature -> testing-tdd -> verify-context-integrity` |
+| feature implementation | `context-router -> generate-feature-context -> testing-tdd -> engineering skill -> verify-context-integrity -> update-living-documentation` |
+| backend domain work | `context-router -> generate-feature-context -> testing-tdd -> backend-ddd -> verify-context-integrity` |
+| event-driven backend work | `context-router -> generate-feature-context -> testing-tdd -> backend-eda -> verify-context-integrity` |
+| frontend work | `context-router -> generate-feature-context -> testing-tdd -> frontend-feature -> verify-context-integrity` |
 | concept learning | `context-router -> update docs/concepts -> verify-context-integrity -> update-living-documentation` |
 | documentation update | `context-router -> update-living-documentation -> verify-context-integrity` |
 | git/release work | `context-router -> git-workflow -> verify-context-integrity` |
@@ -167,8 +167,8 @@ Request type:
 Skill chain:
 - context-router: find specs, API contracts, and project decisions
 - generate-feature-context: create a working brief
-- backend-ddd: model invariants and domain behavior
 - testing-tdd: turn behavior into tests
+- backend-ddd: model invariants and domain behavior
 - verify-context-integrity: check claims against sources
 - update-living-documentation: record durable decisions if any are made
 

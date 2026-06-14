@@ -8,6 +8,7 @@ Use this checklist before finalizing AI-assisted work.
 - Did the output cite or reference the relevant source context?
 - If a feature context was generated, did it separate confirmed facts, assumptions, open questions, risks, and next skill?
 - If TDD was used, did the test plan identify behavior, source, test level, expected failure, and focused verification command?
+- If DDD was used, did the model identify bounded context, aggregate root, invariants, state transitions, repository boundary, and domain tests?
 - Did the agent run or describe an appropriate verification step?
 - If context integrity was checked, did the report include status, sources, findings, missing context, assumptions, and next action?
 - Did durable decisions get recorded?

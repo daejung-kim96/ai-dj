@@ -6,7 +6,7 @@
 
 ## 예시
 
-`backend-ddd` 스킬은 애그리거트, 불변식, 커맨드, 리포지토리, 테스트를 어떻게 생각해야 하는지 설명해야 한다.
+`backend-ddd` 스킬은 애그리거트, 불변식, 커맨드, 리포지토리, 테스트를 어떻게 생각해야 하는지 설명한다.
 
 하지만 어떤 프로젝트에 `Exhibition` 애그리거트가 있다는 사실은 스킬에 넣지 않는다. 그런 정보는 프로젝트 프로필에 둔다.
 
@@ -45,8 +45,8 @@
 supervisor
 -> context-router
 -> generate-feature-context
--> backend-ddd
 -> testing-tdd
+-> backend-ddd
 -> verify-context-integrity
 -> update-living-documentation
 ```

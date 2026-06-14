@@ -12,6 +12,7 @@
 - `ai-agent-harness--ai-에이전트-하네스.md`: AI 에이전트 하네스가 무엇이고 왜 중요한지
 - `context-routing--컨텍스트-라우팅.md`: 에이전트가 작업 전에 어떤 파일을 읽을지 고르는 방식
 - `context-integrity--컨텍스트-무결성.md`: AI 결과가 실제 근거 파일과 맞는지 확인하는 방식
+- `domain-driven-design--도메인-주도-설계.md`: 비즈니스 규칙과 언어를 중심으로 백엔드 도메인을 설계하는 방식
 - `feature-context--기능-컨텍스트.md`: 기능 구현 전에 필요한 정보를 작업 가능한 문맥으로 묶는 방식
 - `living-documentation--살아있는-문서.md`: 대화 중 생긴 결정과 학습 내용을 오래 남기는 방식
 - `skill-roadmap--스킬-로드맵.md`: 공통 스킬을 어떤 순서로 만들면 좋은지
