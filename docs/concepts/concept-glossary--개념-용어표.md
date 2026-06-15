@@ -19,6 +19,7 @@ ai-dj를 공부할 때 자주 나오는 영어 개념을 한국어 이름과 함
 | Verification | 검증 | 결과가 맞는지 확인하는 단계 | `context-integrity--컨텍스트-무결성.md` |
 | Durable Knowledge | 오래 남길 지식 | 다음 작업에서도 써야 하는 결정, 규칙, 학습 내용 | `living-documentation--살아있는-문서.md` |
 | Test-Driven Development | 테스트 주도 개발 | 코드를 쓰기 전에 원하는 동작을 테스트로 먼저 고정하는 방식 | `testing-tdd--테스트-주도-개발.md` |
+| Backend TDD-DDD-EDA Flow | 백엔드 TDD-DDD-EDA 흐름 | 행동, 도메인 책임, 이벤트 전달을 순서대로 설계하는 백엔드 작업 흐름 | `backend-tdd-ddd-eda-flow--백엔드-tdd-ddd-eda-흐름.md` |
 | Red-Green-Refactor | 레드-그린-리팩터 | 실패 테스트, 통과 구현, 구조 정리를 반복하는 TDD 흐름 | `testing-tdd--테스트-주도-개발.md` |
 | Failing Test | 실패하는 테스트 | 아직 구현되지 않은 기대 행동을 먼저 보여주는 테스트 | `testing-tdd--테스트-주도-개발.md` |
 | Domain-Driven Design | 도메인 주도 설계 | 비즈니스 규칙과 언어를 코드 구조의 중심에 두는 방식 | `domain-driven-design--도메인-주도-설계.md` |

@@ -10,6 +10,7 @@
 
 - `concept-glossary--개념-용어표.md`: 영어 이름과 한국어 이름을 함께 보는 개념 용어표
 - `ai-agent-harness--ai-에이전트-하네스.md`: AI 에이전트 하네스가 무엇이고 왜 중요한지
+- `backend-tdd-ddd-eda-flow--백엔드-tdd-ddd-eda-흐름.md`: TDD, DDD, EDA가 백엔드 기능 하나에서 어떻게 이어지는지
 - `context-routing--컨텍스트-라우팅.md`: 에이전트가 작업 전에 어떤 파일을 읽을지 고르는 방식
 - `context-integrity--컨텍스트-무결성.md`: AI 결과가 실제 근거 파일과 맞는지 확인하는 방식
 - `domain-driven-design--도메인-주도-설계.md`: 비즈니스 규칙과 언어를 중심으로 백엔드 도메인을 설계하는 방식
