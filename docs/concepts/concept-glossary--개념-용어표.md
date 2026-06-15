@@ -28,6 +28,14 @@ ai-dj를 공부할 때 자주 나오는 영어 개념을 한국어 이름과 함
 | Aggregate Root | 애그리거트 루트 | 애그리거트 밖에서 접근하는 대표 객체 | `domain-driven-design--도메인-주도-설계.md` |
 | Invariant | 불변식 | 어떤 변경 뒤에도 항상 참이어야 하는 규칙 | `domain-driven-design--도메인-주도-설계.md` |
 | Repository | 리포지토리 | 애그리거트를 저장소에서 가져오고 저장하는 경계 | `domain-driven-design--도메인-주도-설계.md` |
+| Event-Driven Architecture | 이벤트 주도 아키텍처 | 이벤트를 중심으로 시스템을 느슨하게 연결하는 구조 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
+| Domain Event | 도메인 이벤트 | 한 도메인 안에서 실제로 발생한 중요한 사실 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
+| Integration Event | 통합 이벤트 | 다른 시스템이나 바운디드 컨텍스트에 알리기 위한 이벤트 계약 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
+| Producer | 생산자 | 이벤트를 발행하는 쪽 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
+| Consumer | 소비자 | 이벤트를 받아 처리하는 쪽 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
+| Idempotency | 멱등성 | 같은 메시지를 여러 번 처리해도 결과가 망가지지 않는 성질 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
+| Outbox Pattern | 아웃박스 패턴 | 상태 변경과 이벤트 기록을 같은 트랜잭션에 저장한 뒤 나중에 발행하는 방식 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
+| Dead Letter Queue | 데드 레터 큐 | 계속 처리할 수 없는 메시지를 따로 보내는 곳 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
 
 ## 작성 규칙
 

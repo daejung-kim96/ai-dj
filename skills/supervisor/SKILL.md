@@ -53,7 +53,7 @@ clarify objective
 | broad planning | `context-router -> generate-feature-context -> verify-context-integrity` |
 | feature implementation | `context-router -> generate-feature-context -> testing-tdd -> engineering skill -> verify-context-integrity -> update-living-documentation` |
 | backend domain work | `context-router -> generate-feature-context -> testing-tdd -> backend-ddd -> verify-context-integrity` |
-| event-driven backend work | `context-router -> generate-feature-context -> testing-tdd -> backend-eda -> verify-context-integrity` |
+| event-driven backend work | `context-router -> generate-feature-context -> testing-tdd -> backend-ddd -> backend-eda -> verify-context-integrity` |
 | frontend work | `context-router -> generate-feature-context -> testing-tdd -> frontend-feature -> verify-context-integrity` |
 | concept learning | `context-router -> update docs/concepts -> verify-context-integrity -> update-living-documentation` |
 | documentation update | `context-router -> update-living-documentation -> verify-context-integrity` |
