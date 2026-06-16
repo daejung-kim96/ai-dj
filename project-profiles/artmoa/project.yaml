@@ -1,0 +1,47 @@
+id: artmoa
+name: ArtMoa
+description: >
+  ArtMoa is an exhibition and artwork platform with backend, frontend, and
+  infrastructure repositories. Use this profile when the user mentions ArtMoa,
+  artmoa-backend-next, artmoa-frontend-next, artmoa-infra-next, map, venue,
+  board, comments, attachments, exhibitions, artists, or the project-specific
+  branch and merge workflow.
+
+repositories:
+  backend:
+    path: /home/dvkim96/workspace/artmoa/artmoa-backend-next
+    default_branch: dev
+    protected_flow:
+      feature_base: main
+      integration_branch: dev
+  frontend:
+    path: /home/dvkim96/workspace/artmoa/artmoa-frontend-next
+    default_branch: dev
+    protected_flow:
+      feature_base: main
+      integration_branch: dev
+  infra:
+    path: /home/dvkim96/workspace/artmoa/artmoa-infra-next
+    default_branch: main
+
+common_rules:
+  - ../../AGENT.md
+  - ../../docs/rules/engineering-principles.md
+  - ../../docs/rules/context-routing.md
+
+project_rules:
+  - required-reading-map.md
+  - decisions.md
+  - domain-terms.md
+  - known-issues.md
+
+language:
+  user_facing: ko
+  commit_summary: ko
+  conventional_commit_prefix: true
+
+priority:
+  - Current user request
+  - Repository-local official docs and conventions
+  - This ArtMoa project profile
+  - Common AI-DJ harness rules
