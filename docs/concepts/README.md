@@ -16,6 +16,7 @@
 - `domain-driven-design--도메인-주도-설계.md`: 비즈니스 규칙과 언어를 중심으로 백엔드 도메인을 설계하는 방식
 - `event-driven-architecture--이벤트-주도-아키텍처.md`: 이벤트를 중심으로 비동기 백엔드 흐름을 설계하는 방식
 - `feature-context--기능-컨텍스트.md`: 기능 구현 전에 필요한 정보를 작업 가능한 문맥으로 묶는 방식
+- `frontend-feature-development--프론트엔드-기능-개발.md`: 사용자 흐름, 화면 상태, 컴포넌트, API 계약을 함께 설계하는 방식
 - `living-documentation--살아있는-문서.md`: 대화 중 생긴 결정과 학습 내용을 오래 남기는 방식
 - `skill-roadmap--스킬-로드맵.md`: 공통 스킬을 어떤 순서로 만들면 좋은지
 - `skills--스킬.md`: ai-dj의 스킬 개념과 재사용 원칙

@@ -37,6 +37,13 @@ ai-dj를 공부할 때 자주 나오는 영어 개념을 한국어 이름과 함
 | Idempotency | 멱등성 | 같은 메시지를 여러 번 처리해도 결과가 망가지지 않는 성질 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
 | Outbox Pattern | 아웃박스 패턴 | 상태 변경과 이벤트 기록을 같은 트랜잭션에 저장한 뒤 나중에 발행하는 방식 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
 | Dead Letter Queue | 데드 레터 큐 | 계속 처리할 수 없는 메시지를 따로 보내는 곳 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
+| Frontend Feature Development | 프론트엔드 기능 개발 | 사용자 흐름, 화면 상태, 컴포넌트, API 계약을 함께 설계하는 방식 | `frontend-feature-development--프론트엔드-기능-개발.md` |
+| User Flow | 사용자 흐름 | 사용자가 목표를 완료하기까지 거치는 단계 | `frontend-feature-development--프론트엔드-기능-개발.md` |
+| UI State | 화면 상태 | 로딩, 빈 화면, 오류, 성공, 비활성 등 화면의 상황 | `frontend-feature-development--프론트엔드-기능-개발.md` |
+| Server State | 서버 상태 | API나 백엔드에서 가져오고 저장하는 데이터 상태 | `frontend-feature-development--프론트엔드-기능-개발.md` |
+| Client UI State | 클라이언트 UI 상태 | 입력 draft, 열림/닫힘, 선택 탭 같은 브라우저 안 상호작용 상태 | `frontend-feature-development--프론트엔드-기능-개발.md` |
+| API Contract | API 계약 | 프론트와 백엔드가 합의한 요청, 응답, 오류 형식 | `frontend-feature-development--프론트엔드-기능-개발.md` |
+| Accessibility | 접근성 | 키보드, 포커스, 라벨, 의미 구조 등 누구나 쓸 수 있게 하는 기준 | `frontend-feature-development--프론트엔드-기능-개발.md` |
 
 ## 작성 규칙
 

@@ -1,4 +1,4 @@
-﻿# Evaluation Checklist
+# Evaluation Checklist
 
 Use this checklist before finalizing AI-assisted work.
 
@@ -10,6 +10,7 @@ Use this checklist before finalizing AI-assisted work.
 - If TDD was used, did the test plan identify behavior, source, test level, expected failure, and focused verification command?
 - If DDD was used, did the model identify bounded context, aggregate root, invariants, state transitions, repository boundary, and domain tests?
 - If EDA was used, did the workflow identify event name, type, producer, transaction boundary, payload, consumers, idempotency, retry, dead-letter handling, and tests?
+- If frontend-feature was used, did the plan identify user flow, API contract, server/client state, UI states, form behavior, accessibility, responsive checks, and backend follow-ups?
 - Did the agent run or describe an appropriate verification step?
 - If context integrity was checked, did the report include status, sources, findings, missing context, assumptions, and next action?
 - Did durable decisions get recorded?
