@@ -38,6 +38,10 @@ ai-dj를 공부할 때 자주 나오는 영어 개념을 한국어 이름과 함
 | Outbox Pattern | 아웃박스 패턴 | 상태 변경과 이벤트 기록을 같은 트랜잭션에 저장한 뒤 나중에 발행하는 방식 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
 | Dead Letter Queue | 데드 레터 큐 | 계속 처리할 수 없는 메시지를 따로 보내는 곳 | `event-driven-architecture--이벤트-주도-아키텍처.md` |
 | Frontend Feature Development | 프론트엔드 기능 개발 | 사용자 흐름, 화면 상태, 컴포넌트, API 계약을 함께 설계하는 방식 | `frontend-feature-development--프론트엔드-기능-개발.md` |
+| Frontend Verification | 프론트엔드 검증 | 실제 브라우저에서 기능, 상태, 반응형, 접근성, 런타임 오류를 확인하는 과정 | `frontend-verification--프론트엔드-검증.md` |
+| Browser Verification | 브라우저 검증 | 로컬 화면을 직접 열어 사용자 흐름과 오류를 확인하는 검증 | `frontend-verification--프론트엔드-검증.md` |
+| Viewport Check | 뷰포트 확인 | 모바일과 데스크톱 크기에서 레이아웃과 텍스트 fit을 확인하는 절차 | `frontend-verification--프론트엔드-검증.md` |
+| Runtime Health | 런타임 상태 | 콘솔 오류, 네트워크 오류, 깨진 asset, hydration 문제를 포함한 실행 상태 | `frontend-verification--프론트엔드-검증.md` |
 | User Flow | 사용자 흐름 | 사용자가 목표를 완료하기까지 거치는 단계 | `frontend-feature-development--프론트엔드-기능-개발.md` |
 | UI State | 화면 상태 | 로딩, 빈 화면, 오류, 성공, 비활성 등 화면의 상황 | `frontend-feature-development--프론트엔드-기능-개발.md` |
 | Server State | 서버 상태 | API나 백엔드에서 가져오고 저장하는 데이터 상태 | `frontend-feature-development--프론트엔드-기능-개발.md` |

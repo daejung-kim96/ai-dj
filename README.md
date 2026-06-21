@@ -58,6 +58,7 @@ ai-dj/
     backend-ddd/
     backend-eda/
     frontend-feature/
+    frontend-verification/
     testing-tdd/
     git-workflow/
   project-profiles/

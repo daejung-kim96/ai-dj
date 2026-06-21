@@ -334,10 +334,13 @@ context-router
 -> generate-feature-context
 -> testing-tdd
 -> frontend-feature
+-> frontend-verification
 -> verify-context-integrity
 ```
 
 프론트 스킬은 `feature-context`에서 나온 사용자 목표, UI 영향, API 계약, 상태 규칙을 바탕으로 화면 구현 계획을 만든다.
+
+`frontend-verification`은 이 구현 계획이나 실제 구현 결과를 브라우저 기준으로 다시 확인한다.
 
 중간에 백엔드 계약이 비어 있으면 그 사실을 `Backend follow-ups`로 남기고, 필요한 백엔드 스킬로 되돌아간다.
 

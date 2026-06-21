@@ -62,5 +62,6 @@ When the user is learning a concept while building the harness, update `docs/con
 - Backend domain modeling: `skills/backend-ddd`
 - Event-driven backend work: `skills/backend-eda`
 - Frontend feature work: `skills/frontend-feature`
+- Frontend browser verification: `skills/frontend-verification`
 - Test-first work: `skills/testing-tdd`
 - Commit preparation: `skills/git-workflow`
